@@ -1,0 +1,427 @@
+body{
+  padding: 0%;
+  margin: 0;
+  background-color:rgb(49, 43, 43);
+}
+
+.bandeau{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color:rgb(126, 126, 126);
+}
+
+.deconnexion{
+  margin: 4px 10px 4px 10px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #af1212;
+  cursor:pointer;
+}
+
+.administrateur{
+  margin: 4px 10px 4px 50px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #af1212;
+  cursor:pointer;
+}
+
+.DivUnlog{
+  display: flex;
+  flex-direction: row;
+}
+
+.inscription{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5px;
+}
+
+.connexion{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5px;
+}
+
+/* Slider */
+
+.slider{
+  display: flex;
+  
+  -webkit-appearance: none;
+  
+  width: 260px;
+  height: 10px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  
+  outline: none;
+  
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  -webkit-transform: rotate(-90deg);
+
+  margin-left: -77px;
+  margin-top: 150px;
+  margin-bottom: 5px;
+}
+
+.Red{
+  color: rgb(248, 0, 0);
+}
+.Green{
+  color: rgb(46, 248, 6);
+}
+.Blue{
+  color: rgb(14, 117, 212);
+}
+.White{
+  color: white;
+}
+
+.Red, .Green, .Blue, .White{
+  margin-top: 150px;
+  margin-left: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.slidecontainer{
+  display: flex;
+  flex-direction: column;
+  width: 115px;
+}
+
+.Lampes{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.Lampe1, .Lampe2, .Lampe3{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border: 5px solid darkblue;
+  border-radius: 10px;
+}
+
+.slider::-moz-range-thumb{
+  width: 40px;
+  height: 80px;
+  border: 0;
+  background: url('../image/boutonremixe.png');
+  cursor: pointer;
+  -webkit-transform: rotate(-90deg);
+}
+
+.Title{
+  text-align: center;
+}
+
+.ButtonsColors, .ButtonsControls, .ButtonsLampes{
+  display: flex;
+  flex-direction: column;
+}
+
+.SlideLampes, .AllColors, .LampeOn, .LampeOff, .ColorOn, .ColorOff, .Templates, .ButtonsGP1, .ButtonsGP2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.SlideLampes, .ButtonsLampes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* CSS ANIMATION BUTTON RESET */
+
+
+/* CSS ANIMATION BUTTON CONTROLE */
+
+  /* Généralité */
+    .NeonButton{
+        position: relative;
+        display: inline-block;
+        padding: 20px 20px;
+        margin: 20px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 3px;
+        overflow: hidden;
+        width: 120px;
+        text-align: center;
+    }
+    .NeonButton span{
+      position: absolute;
+      display: block;
+    }
+    .NeonButton:hover{
+        color: #050801;
+        -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    }
+
+
+  /* Spécificité Color Button*/
+  
+    :root {
+      --Button_1: rgb(214, 25, 0);
+      --Button_2: rgb(2, 184, 2);
+      --Button_3: rgb(31, 60, 224);
+      --Button_4: rgba(255, 255, 255, 0.829);
+      --Button_5: white;
+      --Button_6: rgb(146, 146, 146);
+    }
+
+    /* RedButton */
+      .RedButton{
+        color: var(--Button_1);
+      }
+      .RedButton:hover{
+        background: var(--Button_1);
+        box-shadow: 0 0 5px var(--Button_1),
+                    0 0 15px var(--Button_1),
+                    0 0 50px var(--Button_1),
+                    0 0 100px var(--Button_1);
+      }
+      .RedButton span:nth-child(1){
+        background: linear-gradient(90deg,transparent,var(--Button_1));
+      }
+      .RedButton span:nth-child(2){
+        background: linear-gradient(180deg,transparent,var(--Button_1));
+      }
+      .RedButton span:nth-child(3){
+        background: linear-gradient(270deg,transparent,var(--Button_1));
+      }
+      .RedButton span:nth-child(4){
+        background: linear-gradient(360deg,transparent,var(--Button_1));
+      }
+
+    /* GreenButton */
+      .GreenButton{
+        color: var(--Button_2);
+      }
+      .GreenButton:hover{
+        background: var(--Button_2);
+        box-shadow: 0 0 5px var(--Button_2),
+                    0 0 15px var(--Button_2),
+                    0 0 50px var(--Button_2),
+                    0 0 100px var(--Button_2);
+      }
+      .GreenButton span:nth-child(1){
+        background: linear-gradient(90deg,transparent,var(--Button_2));
+      }
+      .GreenButton span:nth-child(2){
+        background: linear-gradient(180deg,transparent,var(--Button_2));
+      }
+      .GreenButton span:nth-child(3){
+        background: linear-gradient(270deg,transparent,var(--Button_2));
+      }
+      .GreenButton span:nth-child(4){
+        background: linear-gradient(360deg,transparent,var(--Button_2));
+      }
+
+    /* BlueButton */
+      .BlueButton{
+        color: var(--Button_3);
+      }
+      .BlueButton:hover{
+        background: var(--Button_3);
+        box-shadow: 0 0 5px var(--Button_3),
+                    0 0 15px var(--Button_3),
+                    0 0 50px var(--Button_3),
+                    0 0 100px var(--Button_3);
+      }
+      .BlueButton span:nth-child(1){
+        background: linear-gradient(90deg,transparent,var(--Button_3));
+      }
+      .BlueButton span:nth-child(2){
+        background: linear-gradient(180deg,transparent,var(--Button_3));
+      }
+      .BlueButton span:nth-child(3){
+        background: linear-gradient(270deg,transparent,var(--Button_3));
+      }
+      .BlueButton span:nth-child(4){
+        background: linear-gradient(360deg,transparent,var(--Button_3));
+      }
+
+    /* WhiteButton */
+      .WhiteButton{
+        color: var(--Button_4);
+      }
+      .WhiteButton:hover{
+        background: var(--Button_4);
+        box-shadow: 0 0 5px var(--Button_4),
+                    0 0 15px var(--Button_4),
+                    0 0 50px var(--Button_4),
+                    0 0 100px var(--Button_4);
+      }
+      .WhiteButton span:nth-child(1){
+        background: linear-gradient(90deg,transparent,var(--Button_4));
+      }
+      .WhiteButton span:nth-child(2){
+        background: linear-gradient(180deg,transparent,var(--Button_4));
+      }
+      .WhiteButton span:nth-child(3){
+        background: linear-gradient(270deg,transparent,var(--Button_4));
+      }
+      .WhiteButton span:nth-child(4){
+        background: linear-gradient(360deg,transparent,var(--Button_4));
+      }
+
+    /* FlashButton */
+      .FlashButton{
+        color: var(--Button_5);
+      }
+      .FlashButton:hover{
+        background: var(--Button_5);
+        box-shadow: 0 0 5px var(--Button_5),
+                    0 0 15px var(--Button_5),
+                    0 0 50px var(--Button_5),
+                    0 0 100px var(--Button_5);
+      }
+      .FlashButton span:nth-child(1){
+        background: linear-gradient(90deg,transparent,var(--Button_5));
+      }
+      .FlashButton span:nth-child(2){
+        background: linear-gradient(180deg,transparent,var(--Button_5));
+      }
+      .FlashButton span:nth-child(3){
+        background: linear-gradient(270deg,transparent,var(--Button_5));
+      }
+      .FlashButton span:nth-child(4){
+        background: linear-gradient(360deg,transparent,var(--Button_5));
+      }
+
+    /* NoFlashButton */
+      .NoFlashButton{
+        color: var(--Button_6);
+      }
+      .NoFlashButton:hover{
+        background: var(--Button_6);
+        box-shadow: 0 0 5px var(--Button_6),
+                    0 0 15px var(--Button_6),
+                    0 0 50px var(--Button_6),
+                    0 0 100px var(--Button_6);
+      }
+      .NoFlashButton span:nth-child(1){
+        background: linear-gradient(90deg,transparent,var(--Button_6));
+      }
+      .NoFlashButton span:nth-child(2){
+        background: linear-gradient(180deg,transparent,var(--Button_6));
+      }
+      .NoFlashButton span:nth-child(3){
+        background: linear-gradient(270deg,transparent,var(--Button_6));
+      }
+      .NoFlashButton span:nth-child(4){
+        background: linear-gradient(360deg,transparent,var(--Button_6));
+      }
+
+    /* FranceButton */
+      .FranceButton{
+        color: var(--Button_5);
+      }
+      .FranceButton:hover{
+        background: var(--Button_5);
+        box-shadow: 0 0 5px var(--Button_5),
+                    0 0 15px var(--Button_1),
+                    0 0 50px var(--Button_5),
+                    0 0 100px var(--Button_3);
+      }
+      .FranceButton span:nth-child(1){
+        background: linear-gradient(90deg,transparent,var(--Button_1));
+      }
+      .FranceButton span:nth-child(2){
+        background: linear-gradient(180deg,transparent,var(--Button_1));
+      }
+      .FranceButton span:nth-child(3){
+        background: linear-gradient(270deg,transparent,var(--Button_3));
+      }
+      .FranceButton span:nth-child(4){
+        background: linear-gradient(360deg,transparent,var(--Button_3));
+      }
+
+  /* Box Contours Généralité */
+    .NeonButton span:nth-child(1){
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        animation: animate1 1s linear infinite;
+    }
+    .NeonButton span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+    }
+    .NeonButton span:nth-child(3){
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.50s;
+    }
+    .NeonButton span:nth-child(4){
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      animation: animate4 1s linear infinite;
+      animation-delay: 0.75s;
+    }
+
+  /* KeyFrames Animate */
+    @keyframes animate1{
+      0%{
+          left: -100%;
+      }
+      50%,100%{
+          left: 100%;
+      }
+    }
+    @keyframes animate2{
+      0%{
+          top: -100%;
+      }
+      50%,100%{
+          top: 100%;
+      }
+    }
+    @keyframes animate3{
+        0%{
+            right: -100%;
+        }
+        50%,100%{
+            right: 100%;
+        }
+    }
+    @keyframes animate4{
+      0%{
+          bottom: -100%;
+      }
+      50%,100%{
+          bottom: 100%;
+      }
+    }

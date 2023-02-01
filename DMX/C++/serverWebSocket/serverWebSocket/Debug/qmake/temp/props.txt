@@ -1,0 +1,25 @@
+QT_SYSROOT:
+QT_INSTALL_PREFIX:C:/Users/Lucas G/Desktop/msvc2017_32
+QT_INSTALL_ARCHDATA:C:/Users/Lucas G/Desktop/msvc2017_32
+QT_INSTALL_DATA:C:/Users/Lucas G/Desktop/msvc2017_32
+QT_INSTALL_DOCS:C:/Users/Lucas G/Docs/Qt-5.14.2
+QT_INSTALL_HEADERS:C:/Users/Lucas G/Desktop/msvc2017_32/include
+QT_INSTALL_LIBS:C:/Users/Lucas G/Desktop/msvc2017_32/lib
+QT_INSTALL_LIBEXECS:C:/Users/Lucas G/Desktop/msvc2017_32/bin
+QT_INSTALL_BINS:C:/Users/Lucas G/Desktop/msvc2017_32/bin
+QT_INSTALL_TESTS:C:/Users/Lucas G/Desktop/msvc2017_32/tests
+QT_INSTALL_PLUGINS:C:/Users/Lucas G/Desktop/msvc2017_32/plugins
+QT_INSTALL_IMPORTS:C:/Users/Lucas G/Desktop/msvc2017_32/imports
+QT_INSTALL_QML:C:/Users/Lucas G/Desktop/msvc2017_32/qml
+QT_INSTALL_TRANSLATIONS:C:/Users/Lucas G/Desktop/msvc2017_32/translations
+QT_INSTALL_CONFIGURATION:
+QT_INSTALL_EXAMPLES:C:/Users/Lucas G/Examples/Qt-5.14.2
+QT_INSTALL_DEMOS:C:/Users/Lucas G/Examples/Qt-5.14.2
+QT_HOST_PREFIX:C:/Users/Lucas G/Desktop/msvc2017_32
+QT_HOST_DATA:C:/Users/Lucas G/Desktop/msvc2017_32
+QT_HOST_BINS:C:/Users/Lucas G/Desktop/msvc2017_32/bin
+QT_HOST_LIBS:C:/Users/Lucas G/Desktop/msvc2017_32/lib
+QMAKE_SPEC:win32-msvc
+QMAKE_XSPEC:win32-msvc
+QMAKE_VERSION:3.1
+QT_VERSION:5.14.2
