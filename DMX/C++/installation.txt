@@ -1,0 +1,5 @@
+vous devez travailler sur QT 32 bit
+Etape 1 : Installer le Driver SQL : 
+https://www.pearltrees.com/private/id44989663
+
+
